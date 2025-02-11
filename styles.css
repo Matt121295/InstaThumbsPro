@@ -38,19 +38,24 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.2em;
 }
-
 .logo {
-    width: 100vw;  /* Make the logo span the full screen width */
-    height: auto;   /* Maintain aspect ratio */
-    max-width: none; /* Remove any default max-width limits */
-    margin-bottom: 20px; /* Keep spacing below the logo */
+    display: block;
+    max-width: 90vw; /* Limits logo width to 90% of the viewport */
+    height: auto;
+    margin: 0 auto; /* Centers horizontally */
+    padding-top: 20px; /* Adds spacing from the top */
 }
 
-/* Main Container */
 .container {
-    max-width: 80%;
-    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers text vertically */
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
 }
+
 
 /* Features Section */
 #features {
@@ -74,16 +79,26 @@ nav ul li a {
     border-bottom: 4px solid black; /* Minimalistic black border on bottom */
 }
 
-/* Call to Action Button */
+.cta-section {
+    width: 100vw; /* Full viewport width */
+    text-align: center;
+    padding: 40px 0;
+    background: linear-gradient(90deg, #3a3a3a, #1e1e1e); /* Grey gradient */
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    margin: 0; /* Ensures no gaps */
+}
+
 .cta-btn {
-    background: rgba(255, 255, 255, 0.2); /* Transparent white */
+    background: rgba(255, 255, 255, 0.2);
     color: white;
     padding: 15px 30px;
     font-size: 1.5em;
     border: 2px solid white;
     cursor: pointer;
-    border-radius: 5px; /* Slight rounded corners */
+    border-radius: 5px;
     transition: 0.3s;
+    display: inline-block;
 }
 
 .cta-btn:hover {
@@ -91,11 +106,6 @@ nav ul li a {
     color: black;
 }
 
-/* Contact Section */
-#contact {
-    text-align: center;
-    padding: 50px;
-}
 
 /* Footer */
 footer {
