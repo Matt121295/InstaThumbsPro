@@ -18,31 +18,32 @@
 
     <h1>Choose Your Plan</h1>
 
-    <div class="pricing-container">
-        <div class="plan">
-            <h2>Basic Plan</h2>
-            <p>$5/month</p>
-            <p>✅ 5 AI thumbnails per month</p>
-            <button class="subscribe-btn">Subscribe</button>
-        </div>
-
-        <div class="plan featured">
-            <h2>Pro Plan</h2>
-            <p>$15/month</p>
-            <p>✅ Unlimited AI thumbnails</p>
-            <p>✅ No watermark</p>
-            <p>✅ Premium styles</p>
-            <button class="subscribe-btn">Subscribe</button>
-        </div>
-
-        <div class="plan">
-            <h2>Enterprise Plan</h2>
-            <p>$30/month</p>
-            <p>✅ All Pro features</p>
-            <p>✅ API access</p>
-            <button class="subscribe-btn">Subscribe</button>
-        </div>
+  <div class="pricing-container">
+    <div class="plan" onclick="selectPlan(this)">
+        <h2>Basic Plan</h2>
+        <p>$5/month</p>
+        <p>✅ 5 AI thumbnails per month</p>
+        <button class="subscribe-btn">Subscribe</button>
     </div>
+
+    <div class="plan featured" onclick="selectPlan(this)">
+        <h2>Pro Plan</h2>
+        <p>$15/month</p>
+        <p>✅ Unlimited AI thumbnails</p>
+        <p>✅ No watermark</p>
+        <p>✅ Premium styles</p>
+        <button class="subscribe-btn">Subscribe</button>
+    </div>
+
+    <div class="plan" onclick="selectPlan(this)">
+        <h2>Enterprise Plan</h2>
+        <p>$30/month</p>
+        <p>✅ All Pro features</p>
+        <p>✅ API access</p>
+        <button class="subscribe-btn">Subscribe</button>
+    </div>
+</div>
+
 
 </body>
 </html>
