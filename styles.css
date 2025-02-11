@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.container {
+    max-width: 80%;
+}
+.logo {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+h1 {
+    font-size: 2em;
+}
+p {
+    font-size: 1.2em;
+}
+.cta {
+    margin-top: 20px;
+}
+.demo-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.coming-soon {
+    font-style: italic;
+    margin-top: 10px;
+}
