@@ -43,6 +43,15 @@
         <button class="subscribe-btn">Subscribe</button>
     </div>
 </div>
+<script>
+    function selectPlan(plan) {
+        // Remove 'selected' class from all plans
+        document.querySelectorAll('.plan').forEach(p => p.classList.remove('selected'));
+
+        // Add 'selected' class to the clicked plan
+        plan.classList.add('selected');
+    }
+</script>
 
 
 </body>
