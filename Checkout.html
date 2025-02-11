@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - InstaThumbs Pro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="checkout.html">Cart</a>
+        <a href="faq.html">FAQ</a>
+        <a href="terms.html">Terms</a>
+    </nav>
+
+    <h1>Secure Checkout</h1>
+
+    <div class="checkout-container">
+        <p>You are purchasing the <strong>Pro Plan</strong> - $15/month</p>
+
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID">
+            <button type="submit" class="pay-btn">Pay with PayPal</button>
+        </form>
+    </div>
+
+</body>
+</html>
