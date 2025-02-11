@@ -43,7 +43,7 @@ nav ul li a {
 .logo {
     width: 100vw;
     height: auto;
-    max-width: none;
+    max-width: 100%;
     margin-bottom: 20px;
 }
 
@@ -67,22 +67,29 @@ nav ul li a {
 /* Call to Action (CTA) */
 #cta {
     text-align: center;
-    padding: 50px;
-    background-color: #28a745;
+    padding: 40px 20px;
+    background: linear-gradient(90deg, #3a3a3a, #1e1e1e); /* Dark Grey to Black Gradient */
+    width: 100vw; /* Full width */
+    margin: 0 auto;
+    border-top: 4px solid black; /* Minimalistic black border on top */
+    border-bottom: 4px solid black; /* Minimalistic black border on bottom */
 }
 
+/* Call to Action Button */
 .cta-btn {
-    background-color: white;
-    color: #28a745;
+    background: rgba(255, 255, 255, 0.2); /* Transparent white */
+    color: white;
     padding: 15px 30px;
     font-size: 1.5em;
-    border: none;
+    border: 2px solid white;
     cursor: pointer;
+    border-radius: 5px; /* Slight rounded corners */
+    transition: 0.3s;
 }
 
 .cta-btn:hover {
-    background-color: #fff;
-    color: #222;
+    background: white;
+    color: black;
 }
 
 /* Contact Section */
