@@ -48,14 +48,18 @@
 <a href="cart.html" class="checkout-btn">Proceed to Checkout</a>
 
 <script>
-    function selectPlan(plan) {
+    function selectPlan(plan, planName, price) {
         // Remove 'selected' class from all plans
         document.querySelectorAll('.plan').forEach(p => p.classList.remove('selected'));
 
         // Add 'selected' class to the clicked plan
         plan.classList.add('selected');
+
+        // Store selection in localStorage
+        localStorage.setItem("selectedPlan", JSON.stringify({ name: planName, price: price }));
     }
 </script>
+
 
 
 </body>
