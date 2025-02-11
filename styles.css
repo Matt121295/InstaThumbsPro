@@ -20,7 +20,8 @@
 /* PRICING PLANS */
 .pricing-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
     margin-top: 30px;
 }
@@ -30,21 +31,21 @@
     padding: 20px;
     border-radius: 5px;
     text-align: center;
-    width: 250px;
+    width: 300px;
     transition: all 0.3s ease;
     cursor: pointer;
-    border: 3px solid transparent; /* Default border */
+    border: 3px solid transparent;
 }
 
 .plan:hover {
     transform: scale(1.05);
-    border-color: yellow; /* Highlight on hover */
+    border-color: yellow;
 }
 
 .plan.selected {
     transform: scale(1.1);
     border-color: yellow;
-    box-shadow: 0 0 15px rgba(255, 255, 0, 0.8); /* Glow effect */
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.8);
 }
 
 .subscribe-btn {
@@ -53,6 +54,21 @@
     padding: 10px;
     border: none;
     cursor: pointer;
+}
+
+/* CHECKOUT BUTTON */
+.checkout-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 15px;
+    background: yellow;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    width: 250px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 
