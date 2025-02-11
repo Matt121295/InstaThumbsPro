@@ -39,12 +39,11 @@ nav ul li a {
     font-size: 1.2em;
 }
 
-/* Logo Styling */
 .logo {
-    width: 100vw;
-    height: auto;
-    max-width: 100%;
-    margin-bottom: 20px;
+    width: 100vw;  /* Make the logo span the full screen width */
+    height: auto;   /* Maintain aspect ratio */
+    max-width: none; /* Remove any default max-width limits */
+    margin-bottom: 20px; /* Keep spacing below the logo */
 }
 
 /* Main Container */
