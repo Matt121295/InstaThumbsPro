@@ -31,10 +31,20 @@
     border-radius: 5px;
     text-align: center;
     width: 250px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 3px solid transparent; /* Default border */
 }
 
-.plan.featured {
-    border: 3px solid gold;
+.plan:hover {
+    transform: scale(1.05);
+    border-color: yellow; /* Highlight on hover */
+}
+
+.plan.selected {
+    transform: scale(1.1);
+    border-color: yellow;
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.8); /* Glow effect */
 }
 
 .subscribe-btn {
@@ -44,6 +54,7 @@
     border: none;
     cursor: pointer;
 }
+
 
 /* CHECKOUT */
 .checkout-container {
